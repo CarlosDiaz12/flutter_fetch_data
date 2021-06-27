@@ -40,7 +40,8 @@ class _MyHomePageState extends State<MyHomePage> {
               ListTile(
                 leading: Image.network(person.picture),
                 title: Text(person.name),
-                onTap: () => Navigator.of(context).push(MaterialPageRoute(
+                onTap: () => Navigator.of(context).push(
+                    MaterialPageRoute(
                     builder: (context) =>
                         Scaffold(body: PersonDetail(person)))),
               ),
